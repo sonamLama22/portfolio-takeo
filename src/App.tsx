@@ -5,6 +5,8 @@ import { SelectedPage } from "@/shared/types";
 import Home from "@/pages/home/Home";
 import ProjectList from "@/pages/projects/ProjectList";
 import Contact from "@/pages/contact/Contact";
+import Project from "./model/Project";
+import { useAppSelector } from "./redux/hooks/hooks";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -24,6 +26,15 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll); //remove when we leave the page
   }, []);
+
+  const getProjectList = useAppSelector((state) => state.project.projectList);
+
+  const [projectListData, setProjectListData] = useState<Project[]>();
+
+  useEffect(() => {
+    setProjectListData(getProjectList);
+  }, [getProjectList]);
+
   return (
     <div className="home bg-gray-20">
       <NavBar
@@ -32,7 +43,10 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home />
-      <ProjectList setSelectedPage={setSelectedPage} />
+      <ProjectList
+        projects={projectListData}
+        setSelectedPage={setSelectedPage}
+      />
       <Contact setSelectedPage={setSelectedPage} />
     </div>
   );
