@@ -1,24 +1,17 @@
 import MediaCard from "@/components/card/card";
 import Project from "@/model/Project";
-import { SelectedPage } from "@/shared/types";
-// import { useState } from "react";
-
-// type Props = {
-//   setSelectedPage: (value: SelectedPage) => void;
-// };
 
 interface ProjectProps {
   projects: Project[] | undefined;
-  setSelectedPage: (value: SelectedPage) => void;
 }
 
 const ProjectList: React.FC<ProjectProps> = ({ projects }) => {
   return (
     <section
       id="projects"
-      className="mx-auto my-10 min-h-full w-5/6 py-20 flex flex-row justify-center items-center"
+      className="gap-16 bg-gray-20 py-10  my-10 min-h-full  flex flex-row justify-center items-center"
     >
-      <div className="flex justify-around">
+      <div className="flex flex-wrap relative items-center justify-center">
         {projects &&
           projects.map((project) => (
             <MediaCard key={project.id} project={project} />
@@ -29,6 +22,3 @@ const ProjectList: React.FC<ProjectProps> = ({ projects }) => {
 };
 
 export default ProjectList;
-
-// export default function ProjectList({  }: Props) {
-// }

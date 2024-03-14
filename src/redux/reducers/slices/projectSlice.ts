@@ -39,8 +39,6 @@ export const projectSlice = createSlice({
   },
 });
 
-// export const { addContact, updateContact, removeContact } =
-//   contactSlice.actions;
 export const getProjectList = (state: RootState) => state.project.projectList;
 
 export default projectSlice.reducer;
