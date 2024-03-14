@@ -43,11 +43,8 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home />
-      <ProjectList
-        projects={projectListData}
-        setSelectedPage={setSelectedPage}
-      />
-      <Contact setSelectedPage={setSelectedPage} />
+      <ProjectList projects={projectListData} />
+      <Contact />
     </div>
   );
 }
