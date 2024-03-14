@@ -1,7 +1,13 @@
-import React from "react";
+import { SelectedPage } from "@/shared/types";
 
-function Contact() {
-  return <div>Contact</div>;
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+export default function Contact({ setSelectedPage }: Props) {
+  return (
+    <section id="contact" className="mx-auto min-h-full w-5/6 py-20">
+      Contact
+    </section>
+  );
 }
-
-export default Contact;

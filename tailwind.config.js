@@ -4,15 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#F8F4EB",
+        "gray-20": "#f8fafc",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
-        "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
+        "gray-500": "#172554",
+        "primary-100": "#d1fae5",
         "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
+        "primary-500": "#38bdf8",
         "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
+        "secondary-500": "#6ee7b7",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
