@@ -24,7 +24,7 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: Props) {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <p>Aashirwad Shrestha </p>
+            <p>Student Name </p>
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (

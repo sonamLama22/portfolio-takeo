@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="text-gray-500 text-4xl font-bold">
             Let's Connect and Get to know each other
           </div>
-          <div className="mt-5 text-2xl">aashirwad43@gmail.com</div>
+          <div className="mt-5 text-2xl">email@gmail.com</div>
           <div className="my-5 text-2xl">Chicago, IL, USA</div>
           <div className="flex size-8">
             <img alt="github" src={githubImage} className="mr-5"></img>
