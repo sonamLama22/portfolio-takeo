@@ -12,7 +12,7 @@ function Home() {
         <div>
           {/* Header */}
           <div className="z-10 mt-20 md:basis-3/5">
-            <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-gray md:text-5xl lg:text-6xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
                 Welcome
               </span>{" "}
@@ -20,10 +20,9 @@ function Home() {
             </h1>
           </div>
           <p className="mt-8 ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel modi
-            suscipit voluptas quas laborum quisquam voluptate esse optio
-            debitis, dolore earum sed amet soluta culpa sapiente. Vel sapiente
-            quibusdam commodi.
+            Seasoned Full Stack Developer with extensive experience in designing
+            and implementing scalable digital solutions, leveraging a diverse
+            technology stack including Java, Spring Boot, React, and Node.js.
           </p>
         </div>
         {/* IMAGE */}
